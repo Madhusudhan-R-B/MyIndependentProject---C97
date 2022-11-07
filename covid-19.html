@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="fabric.js"></script>
+</head>
+<body>
+    <nav class="navbar-inverse my_nav_bar">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html" onclick="home();"><button id="covidLogo" style="color: gold; font-size: 35px;">HOME</button></a>
+        </div>
+        
+        <div id="mynavbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="links"><a href="game.html">Cheer Game</a></li>
+                <li class="links"><a href="covid-19.html">Covid-19</a></li>
+                <li class="links"><a href="videosimulation.html">Video Simulation</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <center>
+        <h1 id="sectionTitle">Covid-19</h1>
+        <br>
+        <div id="whole">
+            <div id="titleDiv">
+                <h2 id="title">What is it?</h3>
+            </div>
+            <div id="text-image">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <p style="font-size: 27px;">First identified in Wuhan, China, Covid-19 is an infectious disease which has spread across the whole world. 
+                    It was born in December 19th, 2019 which is why it is called COVID-19. 
+                    It was declared a pandemic on March 11th, 2020. Another name for Covid-19 is CoronaVirus.</p>
+                </div>
+                <img src="covid-cases-across-world.jpeg">
+            </div>
+        </div>
+
+        <div id="whole">
+            <div id="titleDiv">
+                <h2 id="title">Symptoms</h3>
+            </div>
+            <div id="text-image">
+                <div>
+                    <p>Covid-19 has quite a few symtoms:</p>
+                    <img src="symptoms.png">
+                </div>
+            </div>
+        </div>
+
+        <div id="whole">
+            <div id="titleDiv">
+                <h2 id="title">CoronaVirus Structure</h3>
+            </div>
+            <div id="text-image">
+                <div>
+                    <p>This is the structure of the CoronaVirus/Covid-19:</p>
+                    <p>Try it! You can move it around!</p>
+                    <iframe width="725" height="453" src="https://www.tinkercad.com/embed/5pnDok7yUqa?editbtn=1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+                    <br>
+                    <button style="font-size: 30px; border-radius: 30px;" onclick="speak();">SPEAK TEXT</button>
+                    <p id="explaination">The crown like spikes on the surface of the Covid-19 cell (red in this case) are actually 
+                        protein spikes used to access host cells in our body to reproduce. 
+                        These protein spikes attach to host cells and the cells pull them in. Then the RNA (purple in this case), 
+                        sort of like the DNA of the Covid-19 cell which is inside, 
+                        passes into the host cell and makes it produce all the materials needed for a new Covid-19 cell. 
+                        The Covid-19 cell has a fatty layer (orange in this case) protecting the RNA 
+                        and helps to get inside a host cell.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </center>
+    <script src="main.js"></script>
+</body>
+</html>
